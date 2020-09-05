@@ -20,6 +20,31 @@
     font-family: "Fredoka One", sans-serif;
 }
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: 2px solid rgba(0,0,0,.5);
+}
+
 .header-image {
     background: url("../images/header-image.jpg") no-repeat bottom right fixed;
     height: 100vh;
@@ -29,8 +54,9 @@
 
 .logo {
     display: block;
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -39,7 +65,52 @@
 
 /*----------------------------------------------------Home/Index*/
 
+.about {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border: 4px solid black;
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+}
 
+.home-buttons {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-howtoplay {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: black;
+  margin: 20px;
+  /*position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+}
+
+.btn-letsplay {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: black;
+  margin: 20px;
+  /*position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+}
 
 /*----------------------------------------------------Play*/
 
