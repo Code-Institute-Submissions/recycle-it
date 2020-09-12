@@ -30,7 +30,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="container-fluid header-image">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <nav
+            class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent"
+          >
             <button
               class="navbar-toggler"
               type="button"
@@ -64,18 +66,83 @@
             <div class="col about">
               <h3>About</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis provident unde nesciunt? Quis expedita corporis hic
-                totam? Vitae officiis, dolores mollitia sed quam laborum, odit
-                debitis error nam, recusandae unde.
+                Welcome to Recycle It! At a time where taking care of our
+                environment has never been more important, we bring you our
+                educational game that teaches young Children the core basics of
+                recycling. This is to help encourage Children to actively take
+                on the responsibility of recycling at a young age, whilst
+                learning and having fun at the same time. Our game is fun,
+                bright and simple, yet has levels of difficulties as the child
+                progresses. We have aimed this game towards an audience of Key
+                Stage 0 (Ages 3-4) and Key Stage 1 (Ages 5-6), some Key Stage 0
+                Children may find the end levels more challenging. Have fun, and
+                we hope you enjoy playing Recycle It!
               </p>
             </div>
           </div>
           <div class="row">
-          <div class="col home-buttons">
-          <button type="button" class="btn btn-link btn-lg btn-howtoplay">How to Play</button>
-          <a class="btn btn-info btn-lg btn-letsplay" href="#" role="button">Let's Play!</a>
+            <div class="col home-buttons">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg btn-howtoplay"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                How to Play
+              </button>
+              <a class="btn btn-secondary btn-lg btn-letsplay" href="play.html" role="button"
+                >Let's Play!</a
+              >
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+
+    <!-- How to Play Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to Play</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Recycle It! is a simple drag and drop game. The aim is to place the material to the correct recycling bin.
+            To do this, simply click and hold on a material using your mouse if using a computer or with finger/stylus
+            if using phone/tablet, then drag the material to the correct recycling bin and drop
+            (release click/finger). If you have matched the
+            material to the correct recycling bin then it will lock into place, if it is not correct, the material will
+            return to it's original position. Once all materials are placed in the correct recycling bins then the you will
+            have completed the level, either move onto the next level or return back home. The levels will gradually increase
+            in difficulty, i.e. additional recycling bins and materials. This is not a game to trick or be unnecessarily
+            difficult for the user, the aim is to educate and raise awareness of what various materials can be recycled.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-modal-close"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <a class="btn btn-secondary btn-modal-play" href="play.html" role="button">Let's Play!</a>
           </div>
         </div>
       </div>
@@ -98,5 +165,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>

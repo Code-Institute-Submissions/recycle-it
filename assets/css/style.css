@@ -47,7 +47,7 @@
 
 .header-image {
     background: url("../images/header-image.jpg") no-repeat bottom right fixed;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-size: cover;
 }
@@ -60,8 +60,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 /*----------------------------------------------------Home/Index*/
 
@@ -112,12 +110,81 @@
   transform: translate(-50%, -50%);*/
 }
 
+
+/*----------------------------------------------------Modal How to Play*/
+
+.modal-content {
+    border: 4px solid black;
+    border-radius: 30px;
+}
+
+.modal-title {
+    font-family: "Fredoka One", sans-serif;
+}
+
+.modal-body {
+    font-family: "Fredoka One", sans-serif;
+}
+
+.btn-modal-close {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: black;
+  margin: 20px;
+}
+
+.btn-modal-play {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: black;
+  margin: 20px;
+}
+
 /*----------------------------------------------------Play*/
 
 
 
-/*----------------------------------------------------Contact/
+/*----------------------------------------------------Contact*/
 
+.contact-form-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: "Fredoka One", sans-serif;
+  color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.form-control {
+    border: 4px solid black;
+    border-radius: 30px;
+}
+
+.form-group {
+  padding-left: 20px;
+  font-family: "Fredoka One", sans-serif;
+  color: black;
+}
+
+.btn-submit {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: black;
+}
+
+/*.btn-submit:hover {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    background: black;
+    border: white;
+}*/
 
 
 /*----------------------------------------------------Footer*/
