@@ -62,10 +62,51 @@
             </div>
           </nav>
           <img src="../assets/images/logo2.png" class="logo" />
-          <div class="row">
-            <div class="col about">
-              <h3>Play</h3>
-            </div>
+          <div>
+
+            <!--Level One of game-->
+
+            <img
+              class="plastic"
+              id="div1"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-plastic.png"
+            />
+            <img
+              class="paper"
+              id="div2"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-paper.png"
+            />
+            <img
+              class="glass"
+              id="div3"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-glass.png"
+            />
+          </div>
+          <div>
+            <img class="plastic"
+              id="drag1"
+              src="../assets/images/plastic-bottle2.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+            <img class="paper"
+              id="drag2"
+              src="../assets/images/newspaper.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+            <img class="glass"
+              id="drag3"
+              src="../assets/images/glass-bottle.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
           </div>
         </div>
       </div>
@@ -88,5 +129,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/level-one.js"></script>
   </body>
 </html>
