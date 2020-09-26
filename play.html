@@ -62,50 +62,57 @@
             </div>
           </nav>
           <img src="../assets/images/logo2.png" class="logo" />
-          <div>
 
             <!--Level One of game-->
-
+            
+            <!--Bins-->
+            <div>
             <img
-              class="plastic"
+            class="plastic"
               id="div1"
-              ondrop="drop(event)"
+              ondrop="drop1(event)"
               ondragover="allowDrop(event)"
               src="../assets/images/bin-plastic.png"
             />
             <img
-              class="paper"
+            class="paper"
               id="div2"
-              ondrop="drop(event)"
+              ondrop="drop2(event)"
               ondragover="allowDrop(event)"
               src="../assets/images/bin-paper.png"
             />
             <img
-              class="glass"
+            class="glass"
               id="div3"
-              ondrop="drop(event)"
+              ondrop="drop3(event)"
               ondragover="allowDrop(event)"
               src="../assets/images/bin-glass.png"
             />
           </div>
+
+          <!--Items-->
+
           <div>
-            <img class="plastic"
+            <img
+            class="plastic grabbable"
               id="drag1"
               src="../assets/images/plastic-bottle2.png"
               draggable="true"
-              ondragstart="drag(event)"
+              ondragstart="drag1(event)"
             />
-            <img class="paper"
+            <img
+            class="paper grabbable"
               id="drag2"
               src="../assets/images/newspaper.png"
               draggable="true"
-              ondragstart="drag(event)"
+              ondragstart="drag2(event)"
             />
-            <img class="glass"
+            <img
+            class="glass grabbable"
               id="drag3"
               src="../assets/images/glass-bottle.png"
               draggable="true"
-              ondragstart="drag(event)"
+              ondragstart="drag3(event)"
             />
           </div>
         </div>
