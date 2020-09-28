@@ -88,6 +88,20 @@
               ondragover="allowDrop(event)"
               src="../assets/images/bin-glass.png"
             />
+            <img
+            class="metal"
+              id="div4"
+              ondrop="drop4(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-metal.png"
+            />
+            <img
+            class="organic"
+              id="div5"
+              ondrop="drop5(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-organic.png"
+            />
           </div>
 
           <!--Items-->
@@ -114,11 +128,20 @@
               draggable="true"
               ondragstart="drag3(event)"
             />
-            <button>
-            <a href="level-two.html">
-            Level two
-            </a>
-            </button>
+            <img
+            class="glass grabbable"
+              id="drag4"
+              src="../assets/images/metal-can.png"
+              draggable="true"
+              ondragstart="drag4(event)"
+            />
+            <img
+            class="glass grabbable"
+              id="drag5"
+              src="../assets/images/food-waste.png"
+              draggable="true"
+              ondragstart="drag5(event)"
+            />
           </div>
         </div>
       </div>
