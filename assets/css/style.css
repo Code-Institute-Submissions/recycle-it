@@ -50,15 +50,13 @@
     height: 120vh;
     width: 100%;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .logo {
-    display: block;
-    max-width: 30%;
-    height: auto;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
 }
 
 /*----------------------------------------------------Home/Index*/
@@ -74,12 +72,13 @@
     border: 4px solid black;
     text-align: center;
     font-family: "Fredoka One", sans-serif;
+    font-size: 18px;
 }
 
 .home-buttons {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-howtoplay {
@@ -89,11 +88,7 @@
   font-family: "Fredoka One", sans-serif;
   color: black;
   margin: 20px;
-  /*position: relative;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
+  font-size: 18px;
 }
 
 .btn-letsplay {
@@ -103,11 +98,7 @@
   font-family: "Fredoka One", sans-serif;
   color: black;
   margin: 20px;
-  /*position: relative;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
+  font-size: 18px;
 }
 
 
@@ -159,23 +150,25 @@
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
-/*.bin-plastic {
-  display: inline-block;
-  max-width: 30%;
-  height: auto;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
+
+.bins {
+    margin: auto;
+    text-align: center;
 }
 
-.bin-paper {
-  display: inline-block;
-  max-width: 30%;
-  height: auto;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-}*/
+.bins img {
+    padding: 20px
+}
+
+.items {
+    margin: auto;
+    text-align: center;
+}
+
+.items img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /*----------------------------------------------------Contact*/
 
@@ -189,12 +182,12 @@
 }
 
 .form-control {
-    border: 4px solid black;
-    border-radius: 30px;
+  border: 4px solid black;
+  border-radius: 30px;
 }
 
 .form-group {
-  padding-left: 20px;
+  padding-left: 0px;
   font-family: "Fredoka One", sans-serif;
   color: black;
 }
@@ -222,4 +215,169 @@
 
 /*----------------------------------------------------Media Queries*/
 
+@media screen and (max-width: 1024px) {
+    .navbar a {
+        font-size: 30px;
+    }
+    
+    .logo img {
+        max-height: 300px;
+    }
 
+    .about {
+        font-size: 16px;
+    }
+    
+    .bins img {
+        max-width: 175px;
+    }
+    
+    .items img {
+        max-height: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        float: left;
+    }
+    
+    .navbar a {
+        text-align: left;
+    }
+    
+    .logo img {
+        max-height: 275px;
+    }
+
+    .about {
+        font-size: 12px;
+    }
+
+    .btn-howtoplay {
+        font-size: 12px;
+    }
+
+    .btn-letsplay {
+        font-size: 12px;
+    }
+    
+    .header-image {
+        height: 110vh;
+    }
+    
+    .bins img {
+        max-width: 140px;
+    }
+
+    .items img {
+        max-height: 50px;
+    }
+
+    .form-group {
+        font-size: 14px;
+    }
+
+    .contact-form-header {
+        padding: 0;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .header-image {
+        height: 100vh;
+    }
+
+    .logo img {
+        max-height: 250px;
+    }
+
+    .about {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .about h3 {
+        font-size: 18px;
+    }
+
+    .btn-howtoplay {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+    .btn-letsplay {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+    .modal-body {
+        font-size: 12px;
+    }
+
+    .btn-modal-play {
+        font-size: 12px;
+    }
+
+    .btn-modal-close {
+        font-size: 12px;
+    }
+    
+    .bins img {
+        max-width: 75px;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .items img {
+        max-height: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .form-group {
+        font-size: 12px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bins img {
+        max-width: 60px;
+        padding: 5px;
+    }
+
+    .items img {
+        max-height: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bins img {
+        max-width: 50px;
+        padding: 5px;
+    }
+
+    .items img {
+        max-height: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

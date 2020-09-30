@@ -50,56 +50,78 @@
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="level-one.html">Play</a>
-                </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html"
-                    >Contact <span class="sr-only">(current)</span></a
+                  <a class="nav-link" href="level-one.html"
+                    >Play <span class="sr-only">(current)</span></a
                   >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
           </nav>
           <div class="logo">
-          <img src="../assets/images/logo2.png"/>
+          <img src="../assets/images/logo2.png" />
           </div>
-          <section class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <h3 class="contact-form-header">How did we do?</h3>
-                <form>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="name@example.com"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1"
-                      >We'd love to hear what you thought of our game!</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                    <br />
-                    <a
-                      href="mailto:coreyhoward@live.co.uk"
-                      button
-                      type="submit"
-                      class="btn btn-secondary btn-submit"
-                      >Submit</a
-                    >
-                  </div>
-                </form>
-              </div>
-            </div>
-          </section>
+
+            <!--Level One of game-->
+            
+            <!--Bins-->
+            <div class="bins">
+            <img
+            class="plastic"
+              id="div1"
+              ondrop="drop1(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-plastic.png"
+            />
+            <img
+            class="paper"
+              id="div2"
+              ondrop="drop2(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-paper.png"
+            />
+            <img
+            class="glass"
+              id="div3"
+              ondrop="drop3(event)"
+              ondragover="allowDrop(event)"
+              src="../assets/images/bin-glass.png"
+            />
+          </div>
+
+          <!--Items-->
+
+          <div class="items">
+            <img
+            class="plastic grabbable"
+              id="drag1"
+              src="../assets/images/plastic-bottle.png"
+              draggable="true"
+              ondragstart="drag1(event)"
+            />
+            <img
+            class="paper grabbable"
+              id="drag2"
+              src="../assets/images/newspaper.png"
+              draggable="true"
+              ondragstart="drag2(event)"
+            />
+            <img
+            class="glass grabbable"
+              id="drag3"
+              src="../assets/images/glass-bottle.png"
+              draggable="true"
+              ondragstart="drag3(event)"
+            />
+            <button>
+            <a href="level-two.html">
+            Level two
+            </a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -121,5 +143,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/level-one.js"></script>
   </body>
 </html>
