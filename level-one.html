@@ -29,7 +29,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="container-fluid header-image">
+        <div class="container-fluid background-image">
           <nav
             class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent"
           >
@@ -62,7 +62,9 @@
             </div>
           </nav>
           <div class="logo">
-          <img src="../assets/images/logo2.png" />
+          <a href="index.html">
+            <img src="../assets/images/logo2.png" />
+          </a>
           </div>
 
             <!--Level One of game-->
@@ -121,6 +123,50 @@
             Level two
             </a>
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Level complete Modal -->
+
+    <div
+      class="modal fade"
+      id="successMessage"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You've completed the level! Move on to the next level
+            or return back to the Home page.
+          </div>
+          <div class="modal-footer">
+            <a
+              class="btn btn-secondary btn-modal-play"
+              href="index.html"
+              role="button"
+              >Home</a
+            >
+            <a
+              class="btn btn-secondary btn-modal-play"
+              href="level-two.html"
+              role="button"
+              >Let's Play!</a
+            >
           </div>
         </div>
       </div>

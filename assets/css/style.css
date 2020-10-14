@@ -2,7 +2,7 @@
 /*@import url("https://fonts.googleapis.com/css?family=Satisfy|Exo+2&display=swap");*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-/*----------------------------------------------------Header*/
+/*----------------------------------------------------Navbar*/
 
 .navbar {
     background-color: none;
@@ -45,13 +45,17 @@
     border: 2px solid rgba(0,0,0,.5);
 }
 
-.header-image {
-    background: url("../images/header-image.jpg") no-repeat bottom right fixed;
-    height: 120vh;
+/*----------------------------------------------------Background*/
+
+.background-image {
+    background: url("../images/background-image.jpg") no-repeat bottom right fixed;
+    height: 140vh;
     width: 100%;
     background-size: cover;
     background-attachment: scroll;
 }
+
+/*----------------------------------------------------Logo*/
 
 .logo {
     margin: auto;
@@ -174,7 +178,6 @@
 
 .contact-form-header {
   padding-top: 20px;
-  padding-left: 20px;
   font-family: "Fredoka One", sans-serif;
   color: white;
     -webkit-text-stroke-width: 2px;
@@ -190,6 +193,7 @@
   padding-left: 0px;
   font-family: "Fredoka One", sans-serif;
   color: black;
+  font-size: 18px;
 }
 
 .btn-submit {
@@ -208,36 +212,28 @@
     border: white;
 }*/
 
-
-/*----------------------------------------------------Footer*/
-
-
-
 /*----------------------------------------------------Media Queries*/
 
+/*----------------------------------------------------Small laptops and landscape tablets*/
+
 @media screen and (max-width: 1024px) {
-    .navbar a {
-        font-size: 30px;
+    
+    .background-image {
+        height: 100vh;
     }
     
     .logo img {
         max-height: 300px;
     }
-
-    .about {
-        font-size: 16px;
-    }
     
     .bins img {
         max-width: 175px;
     }
-    
-    .items img {
-        max-height: 75px;
-    }
 }
 
-@media screen and (max-width: 768px) {
+/*----------------------------------------------------Navbar collapse*/
+
+@media screen and (max-width: 990px) {
     .navbar-nav {
         float: left;
     }
@@ -245,51 +241,35 @@
     .navbar a {
         text-align: left;
     }
+}
+
+/*----------------------------------------------------Tablets portrait*/
+
+@media screen and (max-width: 768px) {
     
     .logo img {
-        max-height: 275px;
-    }
-
-    .about {
-        font-size: 12px;
-    }
-
-    .btn-howtoplay {
-        font-size: 12px;
-    }
-
-    .btn-letsplay {
-        font-size: 12px;
-    }
-    
-    .header-image {
-        height: 110vh;
+        max-height: 350px;
     }
     
     .bins img {
         max-width: 140px;
+        padding: 0;
+        margin-top: 80px;
+        margin-bottom: 40px;
     }
 
     .items img {
-        max-height: 50px;
+        max-height: 80px;
+        padding: 2px;
     }
 
     .form-group {
-        font-size: 14px;
+        margin-top: 40px;
     }
-
-    .contact-form-header {
-        padding: 0;
-    }
-
-    .btn-submit {
-        font-size: 14px;
-    }
-    
 }
 
 @media screen and (max-width: 425px) {
-    .header-image {
+    .background-image {
         height: 100vh;
     }
 
@@ -357,26 +337,36 @@
 }
 
 @media screen and (max-width: 375px) {
+    .logo img {
+        max-height: 225px;
+    }
+    
     .bins img {
+        margin-top: 50px;
         max-width: 60px;
-        padding: 5px;
+        padding: 0;
     }
 
     .items img {
-        max-height: 25px;
+        max-height: 30px;
         padding-left: 5px;
         padding-right: 5px;
     }
 }
 
 @media screen and (max-width: 320px) {
+    .about {
+        font-size: 9px;
+    }
+    
     .bins img {
         max-width: 50px;
-        padding: 5px;
+        padding: 0;
+        margin-top: 60px;
     }
 
     .items img {
-        max-height: 20px;
+        max-height: 25px;
         padding-left: 5px;
         padding-right: 5px;
     }
