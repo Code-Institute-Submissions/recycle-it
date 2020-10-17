@@ -186,6 +186,8 @@ there is a user interaction I have tested it by using the following steps:
 
 * Enquiry form on 'Contact' page
   1. Submit button sends form to registered email address.
+
+Checked for errors on my site using: https://validator.w3.org/nu/
   
 Other testing tools used included: https://www.browserstack.com/ to test how my site looked and worked on different internet
 browsers such as Google Chrome, Mozilla Firefox, Internet Explorer, etc.
@@ -235,7 +237,7 @@ For other IDEs, pease refer to their help section on how to run.
 * The header image/background was obtained from: https://www.artstation.com/artwork/Y4l4q
 * The RecycleIt! logo was made using: https://www.wix.com/
 * Bin and Items transparent images obtained from: https://www.hiclipart.com/
-
+* Sound effects obtained from: https://www.freesfx.co.uk/
 
 ## Acknowledgements 
 

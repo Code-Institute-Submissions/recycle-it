@@ -75,18 +75,7 @@ function drop5 (ev) {
     foodSplat.play();
 }
 
-/*if ( correctCards == 10 ) {
-    $('#successMessage').show();
-    $('#successMessage').animate( {
-      left: '380px',
-      top: '200px',
-      width: '400px',
-      height: '100px',
-      opacity: 1
-    } );
-}*/
-
-/*-------------STEPS I NEED HELP WITH TO GET MODAL TO WORK---------------*/
+/*-------------STEPS I NEED HELP WITH TO GET MODAL TO WORK---------------
 
 //Need a function that runs through the items and the numbers to save 
 //running the same code over and over.
@@ -101,11 +90,11 @@ document.getElementById("div1").addEventListener("drag", function(event){
 
 });
 
-/*NEED TO DO THIS
+//NEED TO DO THIS
 
 Then when have the item, need to put that choice into a drag function 
 
-SOMETHING LIKE*/
+SOMETHING LIKE
 
 function drag (ev, item) {
 ev.dataTransfer.setData(item, ev.target.id);
@@ -126,7 +115,7 @@ plasticCrunch.play();
 
 //next want to put all the items that have been picked into an array 
 
-// empty array to start with*/
+// empty array to start with
 var levelComplete = [];
 
 //SOMETHING LIKE
@@ -155,4 +144,4 @@ levelComplete.push("organic");
 
 if levelComplete.length > 5 {
 showMessage("successMessage")
-}
+}*/
