@@ -1,5 +1,41 @@
 // Items
 
+let items = {}
+
+function nextLevelModal() {
+    //shows next level modal
+    let modal = document.getElementById("successMessage");
+    modal.style.display = "block";
+}
+
+function setActive(items) {
+    //adds active items to the items object
+    let activeDivs = document.getElementsByClassName('bins');
+    for (let activeDiv of activeDivs) {
+        let activeClass = activeDiv.className.replace('bins ', '');
+        items[activeClass] = true;
+    }
+}
+
+function checkActive() {
+    //checks for active items, opens next level modal if not
+    let activeCount = 0;
+    for (let i in items) {
+        if(items[i]) {
+            activeCount++;
+        }
+    }
+    if (activeCount === 3) {
+        nextLevelModal();
+    }
+}
+
+function deactivateItem(item) {
+    items[item] = false;
+    return true;
+}
+
+
 function drag1 (ev) {
     ev.dataTransfer.setData("choice1", ev.target.id);
     console.log("plastic");
@@ -75,73 +111,3 @@ function drop5 (ev) {
     foodSplat.play();
 }
 
-/*-------------STEPS I NEED HELP WITH TO GET MODAL TO WORK---------------
-
-//Need a function that runs through the items and the numbers to save 
-//running the same code over and over.
-
-//So want to check what item is being moved:
-
-//Eventlistener - see what item - set that into a var item
-
-var dragged;
-
-document.getElementById("div1").addEventListener("drag", function(event){
-
-});
-
-//NEED TO DO THIS
-
-Then when have the item, need to put that choice into a drag function 
-
-SOMETHING LIKE
-
-function drag (ev, item) {
-ev.dataTransfer.setData(item, ev.target.id);
-}
-
-//also need to do that for the drop:
-
-//SOMETHING LIKE:
-
-function drop (ev, item) {
-ev.preventDefault();
-var data = ev.dataTransfer.getData (item);
-ev.target.appendChild(document.getElementById(data));
-
-//play whatever sound dependant on item 
-plasticCrunch.play();
-}
-
-//next want to put all the items that have been picked into an array 
-
-// empty array to start with
-var levelComplete = [];
-
-//SOMETHING LIKE
-
-if (choice == "plastic") {
-var choiceNumber = 
-// add choice to array - 
-levelComplete.push("plastic");
-// console.log("plastic");
-}else if (choice == "paper" ) {
-levelComplete.push("paper");
-// console.log("paper");
-}else if (choice == "glass") {
-levelComplete.push("glass");
-// console.log("glass");
-}else if (choice == "metal") {
-levelComplete.push("metal");
-// console.log("metal");
-}else (choice == "organic") {
-levelComplete.push("organic");
-// console.log("organic");
-}
-
-//when that array is full has length of 5 or more want it to showMessage
-// Show message when array length 5 
-
-if levelComplete.length > 5 {
-showMessage("successMessage")
-}*/
