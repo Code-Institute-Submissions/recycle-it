@@ -12,22 +12,24 @@ function setActive(items) {
     //adds active items to the items object
     let activeDivs = document.getElementsByClassName('bins');
     for (let activeDiv of activeDivs) {
-        let activeClass = activeDiv.className.replace('bins ', '');
+        let activeClass = activeDiv.className.replace('plastic', 'paper', 'glass');
         items[activeClass] = true;
     }
 }
+    let activeCount = 0;
 
 function checkActive() {
     //checks for active items, opens next level modal if not
-    let activeCount = 0;
-    for (let i in items) {
-        if(items[i]) {
+    /*for (let i in items) {
+        if(items[i]) {*/
             activeCount++;
-        }
-    }
+        /*}
+    }*/
     if (activeCount === 3) {
         nextLevelModal();
     }
+
+    console.log(activeCount);
 }
 
 function deactivateItem(item) {
@@ -41,15 +43,18 @@ function drag1 (ev) {
     console.log("plastic");
 }
 
+
 function drag2 (ev) {
     ev.dataTransfer.setData("choice2", ev.target.id);
     console.log("paper");
 }
 
+
 function drag3 (ev) {
     ev.dataTransfer.setData("choice3", ev.target.id);
     console.log("glass");
 }
+
 
 function drag4 (ev) {
     ev.dataTransfer.setData("choice4", ev.target.id);
@@ -81,6 +86,7 @@ function drop1 (ev) {
     var data = ev.dataTransfer.getData ("choice1");
     ev.target.appendChild(document.getElementById(data));
     plasticCrunch.play();
+    checkActive();
 }
 
 function drop2 (ev) {
@@ -88,6 +94,7 @@ function drop2 (ev) {
     var data = ev.dataTransfer.getData("choice2");
     ev.target.appendChild(document.getElementById(data));
     paperScrunch.play();
+    checkActive();
 }
 
 function drop3 (ev) {
@@ -95,6 +102,7 @@ function drop3 (ev) {
     var data = ev.dataTransfer.getData("choice3");
     ev.target.appendChild(document.getElementById(data));
     glassSmash.play();
+    checkActive();
 }
 
 function drop4 (ev) {

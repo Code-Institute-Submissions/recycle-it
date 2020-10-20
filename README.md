@@ -187,10 +187,17 @@ there is a user interaction I have tested it by using the following steps:
 * Enquiry form on 'Contact' page
   1. Submit button sends form to registered email address.
 
-Checked for errors on my site using: https://validator.w3.org/nu/
+Checked for HTML errors on my site using: https://validator.w3.org/nu/
+
+Checked for CSS errors on my site using: https://jigsaw.w3.org/css-validator/
   
 Other testing tools used included: https://www.browserstack.com/ to test how my site looked and worked on different internet
 browsers such as Google Chrome, Mozilla Firefox, Internet Explorer, etc.
+
+- Mozilla Firefox issues: The border around the navigation menu font does not appear as well. Works on Chrome.
+- Safari Issues: The border around the navigation menu font does not appear as well. Also, when testing the drag and drop
+game, when dropping the items the sound clips never played. Could not figure out how to fix this.
+-Edge issues: Sound clips do not play when dropping dragged items into bin. Could not figure out how to fix this.
 
 ### IMPORTANT
 
