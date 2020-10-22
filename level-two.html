@@ -62,46 +62,46 @@
             </div>
           </nav>
           <div class="logo">
-          <a href="index.html">
-            <img src="../assets/images/logo2.png" alt="RecycleIt!" />
-          </a>
+            <a href="index.html">
+              <img src="assets/images/logo2.png" alt="RecycleIt!" />
+            </a>
           </div>
 
-            <!--Level Two of game-->
-            
-            <!--Bins-->
-            <div class="bins">
+          <!--Level Two of game-->
+
+          <!--Bins-->
+          <div class="bins">
             <img
-            class="plastic"
-              id="div1"
-              ondrop="drop1(event)"
-              ondragover="allowDrop(event)"
-              src="../assets/images/bin-plastic.png"
-              alt="Plastic Bin"
-            />
-            <img
-            class="paper"
+              class="paper"
               id="div2"
               ondrop="drop2(event)"
               ondragover="allowDrop(event)"
-              src="../assets/images/bin-paper.png"
+              src="assets/images/bin-paper.png"
               alt="Paper Bin"
             />
             <img
-            class="glass"
-              id="div3"
-              ondrop="drop3(event)"
-              ondragover="allowDrop(event)"
-              src="../assets/images/bin-glass.png"
-              alt="Glass Bin"
-            />
-            <img
-            class="metal"
+              class="metal"
               id="div4"
               ondrop="drop4(event)"
               ondragover="allowDrop(event)"
-              src="../assets/images/bin-metal.png"
+              src="assets/images/bin-metal.png"
               alt="Metal Bin"
+            />
+            <img
+              class="glass"
+              id="div3"
+              ondrop="drop3(event)"
+              ondragover="allowDrop(event)"
+              src="assets/images/bin-glass.png"
+              alt="Glass Bin"
+            />
+            <img
+              class="plastic"
+              id="div1"
+              ondrop="drop1(event)"
+              ondragover="allowDrop(event)"
+              src="assets/images/bin-plastic.png"
+              alt="Plastic Bin"
             />
           </div>
 
@@ -109,38 +109,74 @@
 
           <div class="items">
             <img
-            class="plastic grabbable"
+              class="plastic grabbable"
               id="drag1"
-              src="../assets/images/plastic-bottle.png"
+              src="assets/images/plastic-bottle.png"
               draggable="true"
               ondragstart="drag1(event)"
               alt="Plastic Bottle"
             />
             <img
-            class="paper grabbable"
+              class="paper grabbable"
               id="drag2"
-              src="../assets/images/newspaper.png"
+              src="assets/images/newspaper.png"
               draggable="true"
               ondragstart="drag2(event)"
               alt="Newspaper"
             />
             <img
-            class="glass grabbable"
+              class="glass grabbable"
               id="drag3"
-              src="../assets/images/glass-bottle.png"
+              src="assets/images/glass-bottle.png"
               draggable="true"
               ondragstart="drag3(event)"
               alt="Glass Bottle"
             />
             <img
-            class="glass grabbable"
+              class="metal grabbable"
               id="drag4"
-              src="../assets/images/metal-can.png"
+              src="assets/images/metal-can.png"
               draggable="true"
               ondragstart="drag4(event)"
               alt="Metal Can"
             />
-            <a class="btn btn-secondary btn-letsplay" href="level-three.html" role="button">Level Three</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Level complete Modal -->
+
+    <div
+      class="modal"
+      id="successMessage"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+          </div>
+          <div class="modal-body">
+            You've completed the level! Move on to the next level or return back
+            to the Home page.
+          </div>
+          <div class="modal-footer">
+            <a
+              class="btn btn-secondary btn-modal-play"
+              href="index.html"
+              role="button"
+              >Home</a
+            >
+            <a
+              class="btn btn-secondary btn-modal-play"
+              href="level-three.html"
+              role="button"
+              >Let's Play!</a
+            >
           </div>
         </div>
       </div>
