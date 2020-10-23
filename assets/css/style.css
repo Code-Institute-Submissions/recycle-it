@@ -1,88 +1,92 @@
 /*@import url('https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700|Dancing+Script:100,200,300,400,500,600,700');*/
 /*@import url("https://fonts.googleapis.com/css?family=Satisfy|Exo+2&display=swap");*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
 /*----------------------------------------------------Navbar*/
 
 .navbar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar a {
-    text-align: center;
-    padding: 1% 2%;
-    color: white;
-    text-decoration: none;
-    font-size: 36px;
-    font-weight: bold;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-family: "Fredoka One", sans-serif;
+  text-align: center;
+  padding: 1% 2%;
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: "Fredoka One", sans-serif;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white;
+  color: white;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 .navbar-toggler {
-    background-color: white;
+  background-color: white;
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border: 2px solid rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 /*----------------------------------------------------Background*/
 
 .background-image {
-    background: url("../images/background-image.jpg") no-repeat bottom right fixed;
-    height: 140vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
+  background: url("../images/background-image.jpg") no-repeat bottom right fixed;
+  height: 140vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 /*----------------------------------------------------Logo*/
 
 .logo {
-    margin: auto;
-    text-align: center;
-    padding-top: 30px;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
 }
 
 /*----------------------------------------------------Home/Index*/
 
 .about {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border-radius: 30px;
-    background: white;
-    color: black;
-    padding: 20px;
-    border: 4px solid black;
-    text-align: center;
-    font-family: "Fredoka One", sans-serif;
-    font-size: 18px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  padding: 20px;
+  border: 4px solid black;
+  text-align: center;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 18px;
 }
 
 .home-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-howtoplay {
@@ -105,20 +109,19 @@
   font-size: 18px;
 }
 
-
 /*----------------------------------------------------Modal How to Play*/
 
 .modal-content {
-    border: 4px solid black;
-    border-radius: 30px;
+  border: 4px solid black;
+  border-radius: 30px;
 }
 
 .modal-title {
-    font-family: "Fredoka One", sans-serif;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .modal-body {
-    font-family: "Fredoka One", sans-serif;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .btn-modal-close {
@@ -142,36 +145,36 @@
 /*----------------------------------------------------Play*/
 
 .grabbable {
-    cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
 }
 
- /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
 .grabbable:active {
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .bins {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .bins img {
-    padding: 20px
+  padding: 20px;
 }
 
 .items {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .items img {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*----------------------------------------------------Contact*/
@@ -180,8 +183,8 @@
   padding-top: 20px;
   font-family: "Fredoka One", sans-serif;
   color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .form-control {
@@ -204,170 +207,160 @@
   color: black;
 }
 
-/*.btn-submit:hover {
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    background: black;
-    border: white;
-}*/
-
 /*----------------------------------------------------Media Queries*/
 
 /*----------------------------------------------------Small laptops and landscape tablets*/
 
 @media screen and (max-width: 1024px) {
-    
-    .background-image {
-        height: 100vh;
-    }
-    
-    .logo img {
-        max-height: 300px;
-    }
-    
-    .bins img {
-        max-width: 175px;
-    }
+  .background-image {
+    height: 100vh;
+  }
+
+  .logo img {
+    max-height: 300px;
+  }
+
+  .bins img {
+    max-width: 175px;
+  }
 }
 
 /*----------------------------------------------------Navbar collapse*/
 
 @media screen and (max-width: 990px) {
-    .navbar-nav {
-        float: left;
-    }
-    
-    .navbar a {
-        text-align: left;
-    }
+  .navbar-nav {
+    float: left;
+  }
+
+  .navbar a {
+    text-align: left;
+  }
 }
 
 /*----------------------------------------------------Tablets portrait*/
 
 @media screen and (max-width: 768px) {
-    
-    .logo img {
-        max-height: 350px;
-    }
-    
-    .bins img {
-        max-width: 140px;
-        padding: 0;
-        margin-top: 80px;
-        margin-bottom: 40px;
-    }
+  .logo img {
+    max-height: 350px;
+  }
 
-    .items img {
-        max-height: 80px;
-        padding: 2px;
-    }
+  .bins img {
+    max-width: 140px;
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
 
-    .form-group {
-        margin-top: 40px;
-    }
+  .items img {
+    max-height: 80px;
+    padding: 2px;
+  }
+
+  .form-group {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .background-image {
-        height: 100vh;
-    }
+  .background-image {
+    height: 100vh;
+  }
 
-    .logo img {
-        max-height: 250px;
-    }
+  .logo img {
+    max-height: 250px;
+  }
 
-    .about {
-        font-size: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
+  .about {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
 
-    .about h3 {
-        font-size: 18px;
-    }
+  .about h3 {
+    font-size: 18px;
+  }
 
-    .btn-howtoplay {
-        font-size: 10px;
-        margin-top: 0;
-    }
+  .btn-howtoplay {
+    font-size: 10px;
+    margin-top: 0;
+  }
 
-    .btn-letsplay {
-        font-size: 10px;
-        margin-top: 0;
-    }
+  .btn-letsplay {
+    font-size: 10px;
+    margin-top: 0;
+  }
 
-    .modal-body {
-        font-size: 12px;
-    }
+  .modal-body {
+    font-size: 12px;
+  }
 
-    .btn-modal-play {
-        font-size: 12px;
-    }
+  .btn-modal-play {
+    font-size: 12px;
+  }
 
-    .btn-modal-close {
-        font-size: 12px;
-    }
-    
-    .bins img {
-        max-width: 75px;
-        padding: 0;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
+  .btn-modal-close {
+    font-size: 12px;
+  }
 
-    .items img {
-        max-height: 40px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  .bins img {
+    max-width: 75px;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 
-    .form-group {
-        font-size: 12px;
-    }
+  .items img {
+    max-height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    .form-control {
-        font-size: 12px;
-    }
+  .form-group {
+    font-size: 12px;
+  }
 
-    .btn-submit {
-        font-size: 14px;
-    }
+  .form-control {
+    font-size: 12px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .logo img {
-        max-height: 225px;
-    }
-    
-    .bins img {
-        margin-top: 50px;
-        max-width: 60px;
-        padding: 0;
-    }
+  .logo img {
+    max-height: 225px;
+  }
 
-    .items img {
-        max-height: 30px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  .bins img {
+    margin-top: 50px;
+    max-width: 60px;
+    padding: 0;
+  }
+
+  .items img {
+    max-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .about {
-        font-size: 9px;
-    }
-    
-    .bins img {
-        max-width: 50px;
-        padding: 0;
-        margin-top: 60px;
-    }
+  .about {
+    font-size: 9px;
+  }
 
-    .items img {
-        max-height: 25px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  .bins img {
+    max-width: 50px;
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  .items img {
+    max-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

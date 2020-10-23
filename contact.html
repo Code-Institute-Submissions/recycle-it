@@ -32,7 +32,6 @@
     <script type="text/javascript">
       (function () {
         emailjs.init("user_fAzNDZXd7lMao0UfEBnNh");
-        emailjs.send("gmail", "recycleit", { name: "Corey" });
       })();
     </script>
 
@@ -83,14 +82,22 @@
             <div class="row">
               <div class="col-12">
                 <h3 class="contact-form-header">How did we do?</h3>
-                <form>
+                <form onsubmit="return sendMail(this);" method="POST">
                   <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="fullname"
+                      placeholder="Name"
+                      required
+                    />
                     <label for="exampleFormControlInput1">Email address</label>
                     <input
                       type="email"
                       class="form-control"
                       name="Email"
-                      id="exampleFormControlInput1"
+                      id="emailaddress"
                       placeholder="name@example.com"
                     />
                   </div>
@@ -100,16 +107,13 @@
                     >
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="feedback"
                       rows="3"
                     ></textarea>
                     <br />
-                    <a
-                      href="mailto:coreyhoward2012@googlemail.com"
-                      type="submit"
-                      class="btn btn-secondary btn-submit"
-                      >Submit</a
-                    >
+                    <button type="submit" class="btn btn-secondary btn-submit">
+                      Submit
+                    </button>
                   </div>
                 </form>
               </div>
@@ -136,5 +140,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>

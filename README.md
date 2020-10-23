@@ -20,7 +20,7 @@ general feedback was bright and bold colours, simple design, more illustration a
 and of course fun and silly sounds go a long way! This put me in good stead when designing the website and I had a clear
 picture in mind of how I wanted it to look.  
 
-## UX and Features
+## UX
 
 The design of this website was built in mind for the user which would be young children aged 4/5 upwards. It had to be
 straight forward to use and easy to navigate around, as in the user practically has to follow the direction i've created.
@@ -31,7 +31,23 @@ inappropriate considering the users age, but also to keep the site looking simpl
 bar in the header, but even this I made without a background so the site background could be seen behind the navigation options.
 Introduced next was the centered 'RecycleIt' logo which I created myself, this features across all pages in the same position. 
 With these features implemented, this provided me with the framework for each of the sites pages, so all that was needed was to
-add to each page accordingly. 
+add to each page accordingly.
+
+## User Stories
+
+### Child:
+As a child, I want to play a fun game that has bright colours and lot's of images. It needs to be easy to understand
+and not be too complicated.
+
+### Teacher:
+As a Teacher, I want an educational game for my students to play. One that they will enjoy but also learn from.
+There should be a purpose and objective, that leads to the child understanding what they've achieved in the game.
+
+### Parent:
+As a parent, I want a game that my child can play which is different to conventional games they may play. I want
+them to be able to learn something but also have fun whilst doing so.
+
+## Features
 
 ### Home
 
@@ -187,9 +203,13 @@ there is a user interaction I have tested it by using the following steps:
 * Enquiry form on 'Contact' page
   1. Submit button sends form to registered email address.
 
+Checked responsive design using: http://ami.responsivedesign.is/#
+
 Checked for HTML errors on my site using: https://validator.w3.org/nu/
 
 Checked for CSS errors on my site using: https://jigsaw.w3.org/css-validator/
+
+Checked for errors in javascript code using: https://jshint.com/
   
 Other testing tools used included: https://www.browserstack.com/ to test how my site looked and worked on different internet
 browsers such as Google Chrome, Mozilla Firefox, Internet Explorer, etc.
@@ -198,6 +218,15 @@ browsers such as Google Chrome, Mozilla Firefox, Internet Explorer, etc.
 - Safari Issues: The border around the navigation menu font does not appear as well. Also, when testing the drag and drop
 game, when dropping the items the sound clips never played. Could not figure out how to fix this.
 -Edge issues: Sound clips do not play when dropping dragged items into bin. Could not figure out how to fix this.
+
+## Future Development
+
+Whilst developing this project I have thought of additional ideas that would benefit this website.
+
+* A sound effect for when an item is dragged to the wrong bin i.e. A siren/buzzer, to announce it's incorrect.
+* I think the game needs more educational factors. I had an idea where when the user drags an item to the correct bin,
+i.e. plastic bottle to plastic bin, a pop up would appear with a fact about plastic, how it's made, how much we use, etc.
+* Videos related to recycling, or how maerials are made, such as paper, embedded on the different level pages.
 
 ### IMPORTANT
 
@@ -210,6 +239,14 @@ it does work on. Upon researching it, apparently many touch screen devices do no
 appears to be to use touchMove event. Unfortunately as this was only discovered near at the end of my testing and close to
 my submission date, I was not able to make the relevant changes to correct this. Going forward this is something I would
 like to rectify when I can make corrections.
+
+As of 23/10/20, submisison day of this project. I would just like to add that the responsiveness of this site could be
+much better, I have run out of time to perfect certain areas of this project. I got stuck for a very long time on 
+figuring out and getting the drag and drop functions to work. I spent even longer on constructing the modal that pops up 
+automatically at the end of each game level. These unforseen issues put me behind schedule and I had to make sacrifices,
+responsiveness has suffered as a result and also I would have liked to have cleared more of the warnings that testing has
+uncovered. Obviosuly, if I had more time I would have included additional media queries to improve the site and, although
+the warnings don't have an impact on the site itself, I know it's good etiquette to remove them.
 
 ## Deployment
 
@@ -245,9 +282,9 @@ For other IDEs, pease refer to their help section on how to run.
 * The RecycleIt! logo was made using: https://www.wix.com/
 * Bin and Items transparent images obtained from: https://www.hiclipart.com/
 * Sound effects obtained from: https://www.freesfx.co.uk/
+* Mockups of how website will look on various devices made using: https://placeit.net/c/mockups
 
 ## Acknowledgements 
 
 * I received inspiration for this project from the Code Institute tutorial videos.
 * Highbury Infant and Nursery School, and the children of Purple class for testing the game.
-* I used https://www.browserstack.com/ to test how site looked on different Internet Browsers
