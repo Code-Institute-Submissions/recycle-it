@@ -240,7 +240,7 @@ appears to be to use touchMove event. Unfortunately as this was only discovered 
 my submission date, I was not able to make the relevant changes to correct this. Going forward this is something I would
 like to rectify when I can make corrections.
 
-As of 23/10/20, submisison day of this project. I would just like to add that the responsiveness of this site could be
+As of 23/10/20, submissison day of this project. I would just like to add that the responsiveness of this site could be
 much better, I have run out of time to perfect certain areas of this project. I got stuck for a very long time on 
 figuring out and getting the drag and drop functions to work. I spent even longer on constructing the modal that pops up 
 automatically at the end of each game level. These unforseen issues put me behind schedule and I had to make sacrifices,
